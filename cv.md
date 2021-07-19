@@ -4,7 +4,8 @@
 **English:** Intermediate (B1)
 
 ### Summery
-I am novice frontend-developer with technical education. I like to learn. I have always loved mathematics and computer science. Easy to learn new programming skills.
+I am novice frontend-developer with technical education. I like getting new knowledge and skills. While working on projects I am usually carefully and thorough.
+In my free time I study biochemistry. I would like to participate in a project related to this.
 
 ### Skills
 **Progamming languages and technologies:** JavaScript, HTML, CSS, C#/C++
