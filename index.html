@@ -4,10 +4,68 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>CV</title>
 </head>
 <body>
-    
+  <div class="wrapper">
+    <header class="header">
+      <div class="photo"><img src="images/photo.jpg" alt="photo"></div>
+      <section class="header_content">
+        <h1>Alina Litvinka</h1>
+        <h2>Contact information:</h2>
+        <ul class="list">
+          <li class="list_item"><span class="bold">Phone:</span>  +375(29)829-00-43</li>
+          <li class="list_item"><span class="bold">Email:</span>  alinalitvinko7@gmail.com</li>
+          <li class="list_item"><span class="bold">Discord:</span>  alinka.litwinka#2229</li>
+        </ul>
+      </section>
+    </header>
+    <main class="main">
+      <article class="summary">
+        <h3>Summary</h3>
+        <span>I am novice frontend-developer with technical education. I like getting new knowledge and skills. While working on projects I am usually attentive and thorough.
+        <br>In my free time I also study biochemistry. I would like to participate in a project related to this.</span>
+      </article>
+      <section class="skills">
+        <h3>Skills</h3>
+        <div class="skills_item">
+          <ul class="list">
+              <li class="list_item">HTML, CSS, JavaScript</li>
+              <li class="list_item">Git</li>
+              <li class="list_item">VS Code</li>
+              <li class="list_item">SQL DB</li>              
+          </ul>
+        </div>
+      </section>
+      <section class="code">
+        <h4>Code example</h4>
+        <pre><code>
+function count (string) {  
+    let count = {};
+    string.split('').forEach(function(s) {
+      count[s] ? count[s]++ : count[s] = 1;
+    });
+    return count;
+}
+        </code></pre>    
+      </section>
+      <section class="education">
+        <h5>Education</h5>
+        <span>Belarusian State University of Informatics and Radioelectronics
+          <br>Specialist (Bachelor Degree) - Engineer in radio electronics (Industrial Electronics)</span>
+      </section>
+      <section>
+        <h3>English level</h3>
+        <span>B1 (intermediate)</span>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="github" href="https://github.com/alinalitvinka"></a>
+      <span>© Copyright 2021 by Alina Litvinka</span>
+      <a class="school" href="https://rs.school/js"></a>
+    </footer>
+  </div>    
 </body>
 </html>
