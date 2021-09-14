@@ -7,6 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>CV</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
   <div class="wrapper">
@@ -42,13 +45,17 @@
       <section class="code">
         <h4>Code example</h4>
         <pre><code>
-function count (string) {  
-    let count = {};
-    string.split('').forEach(function(s) {
-      count[s] ? count[s]++ : count[s] = 1;
-    });
-    return count;
-}
+  function decToBin(d) {
+    let res = [];
+    if (d !== 0) {
+      for (i=d; i>0; i = parseInt(i/2)) {
+        res.push(i%2);
+      }   
+      return res.reverse().join("");
+    } else {
+      return '0';
+    }
+  }
         </code></pre>    
       </section>
       <section class="education">
