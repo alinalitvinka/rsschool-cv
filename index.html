@@ -14,37 +14,57 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="photo"><img src="images/photo.jpg" alt="photo"></div>
-      <section class="header_content">
-        <h1>Alina Litvinka</h1>
-        <h2>Contact information</h2>
-        <ul class="list">
-          <li class="list_item"><span class="bold">Phone:</span>  +375(29)829-00-43</li>
-          <li class="list_item"><span class="bold">Email:</span>  alinalitvinko7@gmail.com</li>
-          <li class="list_item"><span class="bold">Discord:</span>  alinka.litwinka#2229</li>
-        </ul>
-      </section>
+      
     </header>
     <main class="main">
-      <article class="summary">
-        <h3>Summary</h3>
-        <span>I am novice frontend-developer with technical education. I like getting new knowledge and skills. While working on projects I am usually attentive and thorough.
-        <br>In my free time I also study biochemistry. I would like to participate in a project related to this.</span>
-      </article>
-      <section class="skills">
-        <h3>Skills</h3>
-        <div class="skills_item">
+      <aside class="sidebar">
+        <div class="photo"><img src="images/photo.jpg" alt="photo"></div>
+        <section class="contacts">
+          <h1>Alina Litvinka</h1>
+          <h2 class="sidebar_title">Contact information</h2>
           <ul class="list">
-              <li class="list_item">HTML, CSS, JavaScript</li>
-              <li class="list_item">Git</li>
-              <li class="list_item">VS Code</li>
-              <li class="list_item">SQL DB</li>              
+            <li class="list_item"><div class="icon discord"></div>  alinka.litwinka#2229</li>
+            <li class="list_item"><div class="icon email"></div>  alinalitvinko7@gmail.com</li>
+            <li class="list_item"><div class="icon phone"></div>  +375(29)829-00-43</li>
+            <li class="list_item"><div class="icon gith"></div><a href="https://github.com/alinalitvinka">github.com/alinalitvinka</a></li>
+            <li class="list_item"><div class="icon telegram"></div> t.me/Litwinka</li>
+            <li class="list_item"><div class="icon location"></div> Minsk, Belarus</li>
           </ul>
-        </div>
-      </section>
-      <section class="code">
-        <h4>Code example</h4>
-        <pre><code>
+        </section>
+        <section class="skills">
+          <h2 class="sidebar_title">Skills</h2>
+          <ul class="list">
+            <li class="list_item">HTML</li>
+            <li class="list_item">CSS</li>
+            <li class="list_item">JavaScript</li>
+            <li class="list_item">Git</li>
+            <li class="list_item">VS Code</li>
+            <li class="list_item">Figma</li>   
+            <li class="list_item">SQL DB</li>            
+        </ul>
+        </section>
+        <section class="languages">
+          <h2 class="sidebar_title">Foreign languages</h2>
+          <ul class="list">
+            <li class="list_item">English - B1 (Intermediate)</li>
+            <li class="list_item">Polish - A2 (Pre-Intermediate)</li>            
+          </ul>
+        </section>
+      </aside>
+      <div class="content">
+        <article class="summary">
+          <h3>Summary</h3>
+          <span>I am novice frontend-developer with technical education. I like getting new knowledge and skills. While working on projects I am usually attentive and thorough.
+          <br>In my free time I also study biochemistry. I would like to participate in a project related to this.</span>
+        </article>
+        <section class="education">
+          <h5>Education</h5>
+          <span>Belarusian State University of Informatics and Radioelectronics
+            <br>Specialist (Bachelor Degree) - Engineer in radio electronics (Industrial Electronics)</span>
+        </section>
+        <section class="code">
+          <h4>Code example</h4>
+          <pre><code>
   function decToBin(d) {
     let res = [];
     if (d !== 0) {
@@ -56,17 +76,9 @@
       return '0';
     }
   }
-        </code></pre>    
-      </section>
-      <section class="education">
-        <h5>Education</h5>
-        <span>Belarusian State University of Informatics and Radioelectronics
-          <br>Specialist (Bachelor Degree) - Engineer in radio electronics (Industrial Electronics)</span>
-      </section>
-      <section>
-        <h3>English level</h3>
-        <span>B1 (intermediate)</span>
-      </section>
+          </code></pre>    
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <a class="github" href="https://github.com/alinalitvinka"></a>
