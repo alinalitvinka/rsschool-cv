@@ -3,6 +3,7 @@ const body = document.body;
 const nav = document.querySelector('.vertical-menu');
 const links = document.querySelectorAll('.menu_list-item');
 
+console.log();
 
 burger.addEventListener('click', showBurgerMenu);
 
