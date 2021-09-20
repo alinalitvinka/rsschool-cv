@@ -24,7 +24,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1000px;
+  max-width: 1080px;
   margin: 0 auto;
   background-color: white;
 }
@@ -190,17 +190,12 @@ h2 {
   height: 60px;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  grid-column-start: 2;
-  padding-right: 40px;
-}
-
 .summary {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  grid-column-start: 2;
+  padding-right: 40px;
   height: 380px;
   text-align: justify;
 }
@@ -211,6 +206,7 @@ h2 {
 }
 
 .education {
+  padding-right: 40px;
   text-align: justify;
 }
 
@@ -249,7 +245,11 @@ h2 {
 
 .education_list-item:nth-child(2n) {
   background-color: #F0F0F0;
-} 
+}
+
+.projects {
+  padding-right: 40px;
+}
 
 .projects_list {
   list-style-type: none;
@@ -278,7 +278,7 @@ h2 {
 
 .project_info {
   width: 65%;
-  font-size: 16px;
+  font-size: 17px;
   text-align: justify;
 }
 
@@ -289,6 +289,12 @@ h2 {
 h6 {
   font-size: 18px;
   margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.code {
+  padding-right: 40px;
+  margin-bottom: 40px;
 }
 
 .footer {
