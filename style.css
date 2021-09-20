@@ -251,6 +251,46 @@ h2 {
   background-color: #F0F0F0;
 } 
 
+.projects_list {
+  list-style-type: none;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-item:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.project_item {
+  display: block;
+  width: 32%;
+  height: auto;
+}
+
+.project_item img {
+  width: 100%;
+  border-radius: 5%;
+  border: 1px solid #9c9a98;
+}
+
+.project_info {
+  width: 65%;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.project_info p {
+  margin-bottom: 5px;
+}
+
+h6 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
 .footer {
   background-color: #6c95d3;
   display: flex;
