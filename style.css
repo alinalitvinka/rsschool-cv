@@ -36,6 +36,17 @@ body.lock {
   display: none;
 }
 
+.hidden {
+  font-size: 0.1rem;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .wrapper {
   max-width: 1080px;
   margin: 0 auto;
@@ -91,7 +102,7 @@ h4, h5 {
   margin-top: 35px;
 }
 
-h1 {
+.top {
   margin-top: 40px;
   text-transform: uppercase;
   text-align: center;
@@ -411,7 +422,7 @@ h6 {
     transform: rotate(1deg) scale(0.9);
   }
 
-  h1 {
+  .top {
     margin-top: 20px;
   }
 
