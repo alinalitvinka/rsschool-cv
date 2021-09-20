@@ -25,6 +25,7 @@
           <li class="menu_list-item"><a class="link" href="#code">Code example</a></li>
         </ul>
       </nav>
+      <div class="burger"><img src="images/menu.png" alt="lines"></div>
     </header>
     <main class="main">
       <aside class="sidebar">
@@ -119,17 +120,17 @@
       <section class="code" id="code">
         <h4>Code example</h4>
         <pre><code>
-  function decToBin(d) {
-    let res = [];
-    if (d !== 0) {
-      for (i=d; i>0; i = parseInt(i/2)) {
-        res.push(i%2);
-      }   
-      return res.reverse().join("");
-    } else {
-      return '0';
-    }
-  }
+ function decToBin(d) {
+   let res = [];
+   if (d !== 0) {
+     for (i=d; i>0; i = parseInt(i/2)) {
+       res.push(i%2);
+     }   
+     return res.reverse().join("");
+   } else {
+     return '0';
+   }
+ }
         </code></pre>    
       </section>
     </main>
