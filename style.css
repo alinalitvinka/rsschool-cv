@@ -28,6 +28,14 @@ body {
   color: #353433;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
+.vertical-menu {
+  display: none;
+}
+
 .wrapper {
   max-width: 1080px;
   margin: 0 auto;
@@ -424,17 +432,54 @@ h6 {
 @media screen and (min-width: 320px) and (max-width: 631px) {
 
   .header {
+    position: fixed;
     justify-content: right;
     padding-right: 40px;
+    height: 72px;
+    width: 100%;
+    z-index: 4;
   }
 
   .burger {
     display: block;
-    
+    position: fixed;
+    top: 27px;
+    right: 40px;
+    width: 40px;
+    height: 21px;
+    z-index: 10;
+    transition: 0.3s ease;
+    cursor: pointer;
   }
 
   .menu {
     display: none;
+  }
+
+  .vertical-menu {
+    position: fixed;
+    width: 320px;
+    top: 0;
+    right: -100%;
+    background: #377be2;
+    height: 100%;
+    z-index: 5;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+
+  .vertical-menu.active {
+    right: 0;
+  }
+
+  .menu_list {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 100%;
+    font-size: 24px;
   }
 
   .main {
@@ -444,6 +489,7 @@ h6 {
 
   .sidebar {
     width: 100%;
+    margin-top: 72px;
   }
 
   .contacts,
@@ -504,7 +550,9 @@ h6 {
 }
 
 @media screen and (min-width: 320px) and (max-width: 424px) {
+
   .code code {
     font-size: 11px;
   }
+
 }
