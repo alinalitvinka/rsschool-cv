@@ -14,12 +14,22 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      
+      <nav class="menu">
+        <ul class="menu_list">
+          <li class="menu-list-item"><a class="link" href="#contacts">Contacts</a></li>
+          <li class="menu_list-item"><a class="link" href="#skills">Skills</a></li>
+          <li class="menu_list-item"><a class="link" href="#languages">Languages</a></li>
+          <li class="menu_list-item"><a class="link" href="#summary">Summary</a></li>
+          <li class="menu_list-item"><a class="link" href="#education">Education</a></li>
+          <li class="menu_list-item"><a class="link" href="#projects">Projects</a></li>
+          <li class="menu_list-item"><a class="link" href="#code">Code example</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="main">
       <aside class="sidebar">
         <div class="photo"><img src="images/photo.jpg" alt="photo"></div>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <h1>Alina Litvinka</h1>
           <h2 class="sidebar_title">Contact information</h2>
           <ul class="list">
@@ -31,7 +41,7 @@
             <li class="list_item"><div class="icon location"></div> Minsk, Belarus</li>
           </ul>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
           <h2 class="sidebar_title">Skills</h2>
           <ul class="list">
             <li class="list_item">HTML</li>
@@ -43,7 +53,7 @@
             <li class="list_item">SQL DB</li>            
         </ul>
         </section>
-        <section class="languages">
+        <section class="languages" id="languages">
           <h2 class="sidebar_title">Foreign languages</h2>
           <ul class="list">
             <li class="list_item">English - B1 (Intermediate)</li>
@@ -51,7 +61,7 @@
           </ul>
         </section>
       </aside>
-      <article class="summary">
+      <article class="summary" id="summary">
         <h3 class="summary_title">Summary</h3>
         <p>I am novice frontend-developer with technical education. Since teenage years I have loved mathematics and
            computer science. In high school I solved the equations from Scanavi textbook just for fun because it helped
@@ -61,7 +71,7 @@
         This can be an application that allows you to download test results, track dynamics, and even interpret them.</p> 
         <p>I plan to learn backend in the future. Serverless technologies are also interesting to me.</p>
       </article>
-      <section class="education">
+      <section class="education" id="education">
         <h5>Education</h5>
         <div class="diploma">
           <div class="education_image"></div>
@@ -78,7 +88,7 @@
           </ul>
         </div>
       </section>
-      <section class="projects">
+      <section class="projects" id="projects">
         <h4>Projects</h4>
         <ul class="projects_list">
           <li class="list-item">
@@ -106,7 +116,7 @@
           </li>
         </ul>
       </section>
-      <section class="code">
+      <section class="code" id="code">
         <h4>Code example</h4>
         <pre><code>
   function decToBin(d) {
